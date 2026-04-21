@@ -1,0 +1,332 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.popup-container {
+  @apply w-full h-full bg-white text-gray-800 flex flex-col;
+}
+
+.popup-header {
+  @apply p-4 border-b border-gray-200 bg-gray-50;
+}
+
+.popup-title {
+  @apply text-lg font-semibold text-gray-900 mb-3;
+}
+
+.popup-tabs {
+  @apply flex space-x-1;
+}
+
+.tab-button {
+  @apply px-3 py-1.5 text-sm font-medium rounded-md transition-colors;
+  @apply text-gray-600 hover:text-gray-900 hover:bg-gray-100;
+}
+
+.tab-button.active {
+  @apply text-blue-600 bg-blue-50 border border-blue-200;
+}
+
+.popup-content {
+  @apply flex-1 overflow-y-auto p-4;
+}
+
+/* Translate Tab */
+.translate-tab {
+  @apply space-y-4;
+}
+
+.translate-form {
+  @apply space-y-4;
+}
+
+.language-selector {
+  @apply flex items-center space-x-2;
+}
+
+.language-selector select {
+  @apply flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.arrow {
+  @apply text-gray-500 font-bold;
+}
+
+.text-input textarea {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none;
+}
+
+.translate-button {
+  @apply w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed font-medium;
+}
+
+.translation-result {
+  @apply mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200;
+}
+
+.result-header {
+  @apply flex justify-between items-center mb-3;
+}
+
+.result-header h3 {
+  @apply text-lg font-semibold text-gray-900;
+}
+
+.save-button {
+  @apply px-3 py-1 text-sm bg-green-600 text-white rounded-md hover:bg-green-700;
+}
+
+.result-content {
+  @apply space-y-2;
+}
+
+.translated-text {
+  @apply text-lg font-medium text-gray-900;
+}
+
+.phonetic {
+  @apply text-sm text-gray-600 italic;
+}
+
+.pronunciation {
+  @apply text-sm text-blue-600;
+}
+
+.part-of-speech {
+  @apply inline-block px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full;
+}
+
+.explanation {
+  @apply text-sm text-gray-700 leading-relaxed;
+}
+
+.examples {
+  @apply mt-3 pt-3 border-t border-gray-200;
+}
+
+.examples h4 {
+  @apply text-sm font-medium text-gray-900 mb-2;
+}
+
+.example {
+  @apply text-sm text-gray-600 mb-1 pl-3 border-l-2 border-gray-200;
+}
+
+/* Word Book Tab */
+.wordbook-tab {
+  @apply space-y-4;
+}
+
+.wordbook-header {
+  @apply flex justify-between items-center;
+}
+
+.wordbook-header h3 {
+  @apply text-lg font-semibold text-gray-900;
+}
+
+.open-full-wordbook {
+  @apply px-3 py-1 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700;
+}
+
+.wordbook-content {
+  @apply text-center py-8;
+}
+
+.wordbook-hint {
+  @apply text-sm text-gray-500 mt-2;
+}
+
+/* Settings Tab */
+.settings-tab {
+  padding: 16px;
+}
+
+.settings-tab h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.api-key-warning {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.api-key-warning p {
+  margin: 0;
+  color: #856404;
+}
+
+.setting-group {
+  margin-bottom: 16px;
+}
+
+.setting-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #555;
+}
+
+.setting-group input[type="password"],
+.setting-group input[type="text"],
+.setting-group select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.setting-group input[type="password"]:focus,
+.setting-group input[type="text"]:focus,
+.setting-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.setting-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.save-settings-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.save-settings-btn:hover {
+  background: #0056b3;
+}
+
+.api-key-help {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.api-key-help h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #495057;
+}
+
+.api-key-help ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.api-key-help li {
+  margin-bottom: 4px;
+}
+
+.api-key-help a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.api-key-help a:hover {
+  text-decoration: underline;
+}
+
+/* Loading and Error States */
+.loading-state, .error-state {
+  @apply flex flex-col items-center justify-center h-full text-center;
+}
+
+.loading-spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mb-4;
+}
+
+.error-state button {
+  @apply mt-4 px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .popup-container {
+    @apply bg-gray-900 text-gray-100;
+  }
+
+  .popup-header {
+    @apply bg-gray-800 border-gray-700;
+  }
+
+  .popup-title {
+    @apply text-gray-100;
+  }
+
+  .tab-button {
+    @apply text-gray-400 hover:text-gray-100 hover:bg-gray-800;
+  }
+
+  .tab-button.active {
+    @apply text-blue-400 bg-blue-900 border-blue-800;
+  }
+
+  .language-selector select {
+    @apply bg-gray-800 border-gray-600 text-gray-100;
+  }
+
+  .text-input textarea {
+    @apply bg-gray-800 border-gray-600 text-gray-100;
+  }
+
+  .translation-result {
+    @apply bg-gray-800 border-gray-700;
+  }
+
+  .translated-text {
+    @apply text-gray-100;
+  }
+
+  .phonetic {
+    @apply text-gray-400;
+  }
+
+  .pronunciation {
+    @apply text-blue-400;
+  }
+
+  .part-of-speech {
+    @apply bg-green-900 text-green-200;
+  }
+
+  .explanation {
+    @apply text-gray-300;
+  }
+
+  .examples {
+    @apply border-gray-700;
+  }
+
+  .examples h4 {
+    @apply text-gray-100;
+  }
+
+  .example {
+    @apply text-gray-400 border-gray-600;
+  }
+
+  .wordbook-header h3 {
+    @apply text-gray-100;
+  }
+
+  .setting-item input[type="checkbox"] {
+    @apply bg-gray-800 border-gray-600;
+  }
+} 
