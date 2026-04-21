@@ -81,13 +81,13 @@ npm run build
 
 | 提供商 | 官网 | 推荐模型 |
 |--------|------|----------|
-| **OpenAI** | https://openai.com | gpt-4o-mini, gpt-4o |
+| **OpenAI** | https://openai.com | gpt-5.4 |
 | **Claude** | https://anthropic.com | claude-sonnet-4-7 |
 | **DeepSeek** | https://deepseek.com | deepseek-chat |
-| **Kimi** | https://moonshot.cn | kimi-k2.5 |
-| **GLM** | https://zhipuai.cn | glm-4-plus |
-| **Qwen** | https://tongyi.aliyun.com | qwen-max |
-| **MiniMax** | https://minimaxi.com | MiniMax-Text-01 |
+| **Kimi** | https://moonshot.cn | kimi-k2.6 |
+| **GLM** | https://zhipuai.cn | glm-5.1 |
+| **Qwen** | https://tongyi.aliyun.com | qwen-3.6 |
+| **MiniMax** | https://minimaxi.com | MiniMax-2.7 |
 
 ### 获取 API Key
 
@@ -198,7 +198,7 @@ npm run clean
 
 ## 📄 许可证
 
-MIT License © 2024 Omini Translator
+MIT License © 2026 Omini Translator
 
 ---
 
